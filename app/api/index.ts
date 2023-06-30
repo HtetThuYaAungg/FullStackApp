@@ -2,7 +2,7 @@ import { PostProps } from "@/types"
 
 export async function fetchPostsData():Promise<PostProps[]> {
 
-    const res = await fetch('http://localhost:3000/api/posts')
+    const res = await fetch('https://fullstackapp-eight.vercel.app/api/posts')
   
     if (!res.ok) {
       throw new Error('Failed to fetch data')
@@ -13,7 +13,7 @@ export async function fetchPostsData():Promise<PostProps[]> {
   
 export async function fetchCurrentPostData(id:string):Promise<PostProps[]> {
 
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`);
+  const res = await fetch(`https://fullstackapp-eight.vercel.app/posts/${id}`);
 
   if (!res.ok) {
     throw new Error('Failed to fetch post')
