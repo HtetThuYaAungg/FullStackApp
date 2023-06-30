@@ -1,0 +1,41 @@
+.mainTitle{
+    @apply text-[70px] sm:text-[100px] mt-10;
+    background-image: linear-gradient(to right, #166933, #2c2c31, #5abd80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container{
+    @apply mb-10
+}
+
+.title{
+    @apply text-3xl mx-2 m-5
+}
+
+.items{
+    @apply flex flex-col sm:flex-row gap-7 sm:gap-10 lg:gap-36 mx-2 my-3 items-center
+}
+
+.link{
+    @apply border-2 border-white  w-80 h-80 relative;
+    background-size: cover !important;
+}
+
+.link:nth-child(1){
+    background: url('/illustration.png');
+}
+.link:nth-child(2){
+    background: url('/websites.jpg');
+}
+.link:nth-child(3){
+    background: url('/apps.jpg');
+}
+
+.imageTitle{
+    @apply absolute font-bold text-lg bottom-2.5 right-2.5
+}
+
+.link:hover .imageTitle{
+    @apply text-green-600
+}

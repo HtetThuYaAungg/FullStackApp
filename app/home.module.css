@@ -1,0 +1,36 @@
+.container {
+ @apply flex flex-col gap-5 sm:gap-0 sm:flex-row sm:mt-5 lg:mt-0 items-center mb-10
+}
+.item {
+    @apply flex-1 sm:gap-5
+}
+
+.image {
+   @apply w-full h-[370px] lg:h-[500px];
+   object-fit: contain;
+   animation: move 3s infinite ease alternate;
+}
+@keyframes move {
+   from{
+       transform: translateY(-15px)
+   }
+   to{
+       transform: translateY(0px) scale(1.03);
+   }
+}
+
+
+
+.title {
+    @apply font-bold text-5xl md:text-6xl lg:text-7xl mt-[70px] lg:mt-0 px-3 mb-5
+}
+
+.gradient {
+    background-image: linear-gradient(to right, #ff00cc, #3333ff, #68D391);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.desc {
+    @apply font-medium text-lg p-3 mb-3
+}

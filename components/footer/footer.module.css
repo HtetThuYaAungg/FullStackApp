@@ -1,0 +1,11 @@
+.container{
+    @apply flex flex-row h-10 items-center text-xs sm:text-sm justify-between sm:justify-around
+}
+
+.social{
+    @apply flex flex-row gap-2 sm:gap-3
+}
+
+.icons{
+  @apply opacity-50 cursor-pointer hover:opacity-20
+}

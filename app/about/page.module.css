@@ -1,0 +1,27 @@
+.container{
+   @apply mb-6
+}
+
+.imagecontainer {
+    @apply w-full h-[200px] sm:h-[300px] lg:h-[400px] relative m-auto mt-10
+}
+
+.image{
+    @apply object-cover grayscale-[100] rounded-tr-sm  rounded-tl-3xl rounded-bl-sm rounded-br-3xl
+}
+
+.imageText{
+    @apply absolute text-white bottom-5 left-1 sm:left-5 bg-gradient-to-r from-green-500 to-gray-500 p-2 sm:p-5 rounded-tr-sm  rounded-tl-3xl rounded-bl-sm rounded-br-3xl
+}
+
+.textcontainer {
+    @apply  sm:flex-row flex-1 flex flex-col gap-7 lg:gap-10 mt-[50px] p-2 sm:p-1
+}
+
+.item {
+    @apply flex-1 flex-col  gap-20
+}
+
+.desc {
+    @apply font-normal text-lg text-justify
+}

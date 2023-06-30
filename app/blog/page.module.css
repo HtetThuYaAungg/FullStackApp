@@ -1,0 +1,35 @@
+.container{
+   @apply flex flex-col sm:flex-row gap-2 sm:gap-5 lg:gap-12  items-center mb-10 sm:mb-12
+}
+
+.container:nth-child(2n){
+   @apply sm:flex sm:flex-row-reverse
+  }
+
+.mainContainer{
+   @apply mx-2 mt-10
+}
+
+.link{
+ 
+}
+
+.imgContainer{
+
+}
+
+.img{
+ @apply object-contain
+}
+
+.content{
+
+}
+
+.title{
+    @apply text-2xl mb-2
+}
+
+.desc{
+ @apply  text-lg mx-4 sm:text-justify
+}

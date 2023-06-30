@@ -1,0 +1,42 @@
+.container{
+    @apply sm:mt-10 
+}
+
+.contact {
+ @apply sm:flex-row sm:justify-between items-center sm:gap-40 sm:px-14 lg:px-48 lg:gap-64   flex flex-col gap-7    lg:mt-0 mb-5
+}
+
+.imageContainer {
+    @apply w-64  h-64 sm:h-[300px] lg:h-[350px] relative
+}
+
+.image {
+    object-fit: contain;
+    animation: move 3s infinite ease alternate;
+}
+@keyframes move {
+    from{
+        transform: translateY(-15px)
+    }
+    to{
+        transform: translateY(0px) scale(1.03);
+    }
+}
+
+.title{
+    @apply text-7xl sm:text-[60px] font-bold mb-20 text-justify px-10 sm:px-40
+}
+
+.form {
+    @apply flex flex-1  flex-col gap-5 
+}
+
+.gradient {
+    background-image: linear-gradient(to right, #166933, #2c2c31, #5abd80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .input, .textarea {
+     @apply p-2 text-gray-800 bg-gradient-to-r from-green-500 to-gray-700 rounded-tl-3xl rounded-br-3xl
+  }

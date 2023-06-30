@@ -1,0 +1,27 @@
+.container{
+  @apply mx-4
+}
+
+.catTitle{
+        @apply text-2xl
+}
+
+.item{
+   @apply  flex-col sm:flex sm:flex-row  mt-14 mb-24 sm:justify-between sm:gap-40 items-center
+}
+
+.item:nth-child(2n+1){
+ @apply sm:flex sm:flex-row-reverse
+}
+
+.content{
+  @apply flex-1
+}
+
+.imgContainer{
+  @apply flex flex-1 h-[300px] sm:h-[350px]  relative
+}
+
+.img{
+    @apply  object-cover
+}

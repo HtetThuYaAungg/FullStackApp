@@ -1,0 +1,15 @@
+.container{
+    @apply flex flex-col gap-10 items-center justify-center 
+}
+
+.form{
+    @apply w-[300px] flex flex-col gap-9
+}
+
+.input{
+    @apply p-[20px] bg-transparent border-2 border-solid border-gray-600 rounded-sm text-base font-bold
+}
+
+.button{
+    @apply p-3 rounded-md border-2 border-solid border-gray-600 text-lg bg-gradient-to-r from-green-500 hover:bg-slate-300
+}

@@ -1,0 +1,39 @@
+.container{
+    @apply flex flex-col sm:flex-row  gap-10 items-center justify-center mt-10 mb-10
+}
+
+.posts{
+    @apply flex-1 flex flex-col gap-4 justify-start
+}
+
+.post{
+    @apply flex sm:flex-row flex-col items-center justify-between sm:justify-around mr-10 
+}
+
+/* .imgcontainer{
+    @apply 
+} */
+
+.img{
+    @apply object-cover
+}
+
+.delete{
+    @apply cursor-pointer text-red-600
+}
+
+.form{
+    @apply w-[300px] flex flex-col gap-2
+}
+
+.input{
+    @apply p-[10px] bg-transparent border-2 border-solid border-gray-600 rounded-sm text-base font-bold
+}
+
+.textarea{
+    @apply p-[10px] bg-transparent border-2 border-solid border-gray-600 rounded-sm text-base font-bold
+}
+
+.button{
+    @apply p-3 rounded-md border-2 border-solid border-gray-600 text-lg bg-gradient-to-r from-green-500 hover:bg-slate-300
+}
