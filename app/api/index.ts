@@ -13,7 +13,7 @@ export async function fetchPostsData():Promise<PostProps[]> {
   
 export async function fetchCurrentPostData(id:string):Promise<PostProps[]> {
 
-  const res = await fetch(`https://fullstackapp-eight.vercel.app/posts/${id}`);
+  const res = await fetch(`https://fullstackapp-eight.vercel.app/api/posts/${id}`);
 
   if (!res.ok) {
     throw new Error('Failed to fetch post')
