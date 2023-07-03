@@ -19,7 +19,7 @@
 body {
  max-width: 100vw;
  overflow-x: hidden;
- @apply max-w-[1366px] min-h-[100vh] mt-0 m-auto sm:pt-0 pr-4 pl-4 md:pr-10 md:pl-10 flex flex-col justify-between
+ @apply max-w-[1366px] min-h-[100vh] mt-0 m-auto sm:pt-0  pr-1 pl-2 md:pr-10 md:pl-10 flex flex-col justify-between
 
 
 }
@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column; 
   justify-content: space-between; */
-  @apply max-w-[1366px] min-h-[100vh] mt-0 m-auto sm:pt-0 pr-4 pl-4 md:pr-10 md:pl-10 flex flex-col justify-between
+  @apply max-w-[1366px] min-h-[100vh] mt-0 m-auto sm:pt-0 pr-1 pl-1 md:pr-10 md:pl-10 flex flex-col justify-between
   
 }
 
@@ -52,4 +52,47 @@ body {
 .dark{
   background-color: black;
   color: white;
+}
+
+.light .Nav{
+  box-shadow:  1px 2px 4px rgba(128, 128, 128, 0.5);
+}
+.dark .Nav{
+  box-shadow:  1px 2px 4px rgba(75, 64, 64, 0.5);
+}
+
+.Nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @apply justify-center sm:justify-end
+}
+
+.Nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.Nav li {
+  @apply pt-[1rem] pb-[1rem] ml-0.5
+}
+
+.Nav li:hover,
+.Nav li:focus {
+  @apply sm:p-[1rem] p-1
+}
+
+.Nav li:hover,
+.Nav li:focus,
+.Nav li:hover a,
+.Nav li:focus a {
+  background-color: #eee;
+  color: #333;
+}
+
+.Nav li:hover a,
+.Nav li:focus a {
+  cursor: pointer;
 }
